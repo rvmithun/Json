@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Json</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+Template:
+<select name="Template">
+  <option>Alla</option>
+  <option>Dave</option>
+</select>
+<br>
+Output:
+<select name="Output">
+   <option>PDF</option>
+  <option>HTML</option>
+ </select>
+<br>
+<input type="file" value="Path" name="Path">
+<br>
+<input type="submit" value="Go" name="Go">
+<%= yield %>
+
+</body>
+</html>
